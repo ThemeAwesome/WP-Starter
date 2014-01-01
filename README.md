@@ -1,6 +1,6 @@
 A WordPress Child Theme
 ====================
-WP-Starter is based a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
+WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
 ###WP-Starter Demo###
 You can see a demo of WP-Starter here: http://wpstarter.themeawesome.com/ - It's nothing fancy, but make sure to look at the page source and you will see that the demo is in fact using WP-Starter.
