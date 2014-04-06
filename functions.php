@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 5.2.0
+ * @since WP-Starter 5.2.2
  */
 
 // Start adding your theme specific functions below
