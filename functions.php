@@ -19,9 +19,28 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 5.2.2
+ * @since WP-Starter 1.0
  */
 
-// Start adding your theme specific functions below
+/**
+ * Setup WP-Starter's textdomain.
+ *
+ * Declare a textdomain for WP-Starter.
+ * Translations can be filed in the /languages/ directory.
+ */
+function wpstarter_theme_setup() {
+	load_child_theme_textdomain( 'wpstarter', get_stylesheet_directory() . '/language' );
+}
+add_action( 'after_setup_theme', 'wpstarter_theme_setup' );
+
+/**
+ * Register additional scripts or styles exclusive to WP-Starter.
+ */
+function wpstarter_scripts_styles() {
+	
+	// The wpstarter-functions.js file will allow you to add functions to make any additional scripts you add work, i.e. lightbox or maybe a carousel script
+    wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
+}
+add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 0 );
 
 ?>

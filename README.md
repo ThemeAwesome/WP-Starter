@@ -1,4 +1,4 @@
-A WordPress Child Theme - v5.2.2
+A WordPress Child Theme - v1.0
 ====================
 WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
@@ -6,7 +6,7 @@ WP-Starter is a WordPress child theme for use with WP-Forge. If you need more in
 You can see a demo of WP-Starter here: http://wpstarter.themeawesome.com/ - It's nothing fancy, but make sure to look at the page source and you will see that the demo is in fact using WP-Starter.
 
 ###WP-Forge Forums###
-If you need help with implementation or if you run into issues, you can post your questions/issues here or visit the forums: http://themeawesome.com/forums
+If you need help with implementation or if you run into issues, you can post your questions/issues here or visit the forums: http://themeawesome.com/forums/wp-starter/
 
 ###Installation###
 If you downloaded the parent theme WP-Forge from Github, you will need to open the WP-Starter style.css file and change the @import url reference to "WP-Forge-master" (without the quotation marks) instead of "wp-forge". If you downloaded the parent theme WP-Forge from ThemeAwesome.com, then you do not have to change anything.
@@ -21,5 +21,5 @@ This means WP-Starter is completely free to use and modify as you see fit. I hop
 
 ThemeAwesome.com
 =============
-WP-Starter is a WordPress Child Theme developed by [ThemeAwesome.com](http://themeawesome.com), a site focused on Responsive PSD to WordPress conversions and WordPress Theme Support
+WP-Starter is a WordPress Child Theme developed by [ThemeAwesome.com](http://themeawesome.com), a site focused on Responsive WordPress Themes.
 
