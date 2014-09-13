@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 1.0
+ * @since WP-Starter 2.0
  */
 
 /**
@@ -34,13 +34,29 @@ function wpstarter_theme_setup() {
 add_action( 'after_setup_theme', 'wpstarter_theme_setup' );
 
 /**
- * Register additional scripts or styles exclusive to WP-Starter.
+ *	Dequeue the fucntions.js file of WP-Forge so we can use the one in WP-Starter. This way only one functions file is loaded instead of
+ *  two.
+ *
+ *	Hooked to the wp_print_scripts action, with a late priority (100),
+ *	so that it is after the script was enqueued.
+ *
+ *	@see http://codex.wordpress.org/Function_Reference/wp_dequeue_script
+ */
+function wpstarter_dequeue_script() {
+
+   wp_dequeue_script( 'functions-js' );
+}
+add_action( 'wp_print_scripts', 'wpstarter_dequeue_script', 100 );
+
+/**
+ *	Register our scripts or styles exclusive to WP-Starter..
  */
 function wpstarter_scripts_styles() {
-	
-	// The wpstarter-functions.js file will allow you to add functions to make any additional scripts you add work, i.e. lightbox or maybe a carousel script
+
+	// Let's go ahead and register WP-Starter's function.js file wpstarter-functions.js first. You will notice that the wpstarter-functions.js files is exactly the same as the function.js file in WP-Forge.
     wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
+
 }
-add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 0 );
+add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 100 );
 
 ?>

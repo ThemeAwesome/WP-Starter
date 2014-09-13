@@ -1,4 +1,4 @@
-A WordPress Child Theme - v1.0
+A WordPress Child Theme - v2.0
 =========================
 WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
@@ -25,3 +25,7 @@ This means WP-Starter is completely free to use and modify as you see fit. I hop
 ThemeAwesome.com
 =========================
 WP-Starter is a WordPress Child Theme developed by ThemeAwesome.com, a site focused on Responsive WordPress Themes.
+
+FoundationThemes.co
+=============
+FoundationThemes.co, http://foundationthemes.co/ is a website focused on developing Responsive WordPress themes built with WordPress and Zurb’s Foundation - Make sure you enter your email address to be notified when launches.
