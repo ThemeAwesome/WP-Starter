@@ -22,5 +22,4 @@ This means WP-Starter is completely free to use and modify as you see fit. I hop
 WP-Starter is a WordPress Child Theme developed by [ThemeAwesome.com] (http://themeawesome.com), a site focused on Responsive WordPress Themes.
 
 ###FoundationThemes.co###
-=============
 [FoundationThemes.co] (http://foundationthemes.co/) is a website focused on developing Responsive WordPress themes built with WordPress and Zurb’s Foundation - Make sure you enter your email address to be notified when launches.
