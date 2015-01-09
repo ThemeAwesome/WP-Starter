@@ -57,6 +57,6 @@ function wpstarter_scripts_styles() {
     wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
 
 }
-add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 100 );
+add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 1 );
 
 ?>
