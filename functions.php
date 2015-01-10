@@ -54,7 +54,7 @@ add_action( 'wp_print_scripts', 'wpstarter_dequeue_script', 100 );
 function wpstarter_scripts_styles() {
 
 	// Let's go ahead and register WP-Starter's function.js file wpstarter-functions.js first. You will notice that the wpstarter-functions.js files is exactly the same as the function.js file in WP-Forge.
-    wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
+    wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/functions.js', array(), '', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 1 );
