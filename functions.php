@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 2.0
+ * @since WP-Starter 2.1
  */
 
 /**
@@ -34,13 +34,13 @@ function wpstarter_theme_setup() {
 add_action( 'after_setup_theme', 'wpstarter_theme_setup' );
 
 /**
- *	Dequeue the fucntions.js file of WP-Forge so we can use the one in WP-Starter. This way only one functions file is loaded instead of
- *  two.
+ * Dequeue the fucntions.js file of WP-Forge so we can use the one in WP-Starter. 
+ * This way only one functions file is loaded instead of two.
  *
- *	Hooked to the wp_print_scripts action, with a late priority (100),
- *	so that it is after the script was enqueued.
+ * Hooked to the wp_print_scripts action, with a late priority (100),
+ * so that it is after the script was enqueued.
  *
- *	@see http://codex.wordpress.org/Function_Reference/wp_dequeue_script
+ * @see http://codex.wordpress.org/Function_Reference/wp_dequeue_script
  */
 function wpstarter_dequeue_script() {
 
@@ -49,14 +49,26 @@ function wpstarter_dequeue_script() {
 add_action( 'wp_print_scripts', 'wpstarter_dequeue_script', 100 );
 
 /**
- *	Register our scripts or styles exclusive to WP-Starter..
+ * Enqueue our styles
+ *
+ * Thanks to James Maiden of ReallyGreenWP.com for information on doing away with @import and
+ * using a new process to include the parent theme style sheet.
+ *
+ * @see http://reallygreenwp.com/
  */
-function wpstarter_scripts_styles() {
+function wpstarter_styles() {
 
-	// Let's go ahead and register WP-Starter's function.js file wpstarter-functions.js first. You will notice that the wpstarter-functions.js files is exactly the same as the function.js file in WP-Forge.
-    wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/functions.js', array(), '', true );
-
+	wp_enqueue_style( 'parent-theme', get_template_directory_uri() . '/style.css' );
 }
-add_action( 'wp_enqueue_scripts', 'wpstarter_scripts_styles', 1 );
+add_action( 'wp_enqueue_scripts', 'wpstarter_styles', 1);
+
+/**
+ *	Enqueue our styles and scripts
+ */
+function wpstarter_scripts() {
+
+	wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
+}
+add_action( 'wp_enqueue_scripts', 'wpstarter_scripts', 1);
 
 ?>

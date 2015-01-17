@@ -1,4 +1,4 @@
-﻿A WordPress Child Theme - v2.0
+﻿A WordPress Child Theme - v2.1
 =========================
 WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
@@ -17,7 +17,7 @@ If you downloaded the parent theme WP-Forge from Github, you will need to open t
 License
 =========================
 WP-Starter is licensed as follows:
-* WordPress is GPLv2 - http://www.gnu.org/licenses/gpl-2.0.html
+* WordPress is GPLv2 - http://www.gnu.org/licenses/gpl-2.1.html
 * Foundation by ZURB is MIT - http://opensource.org/licenses/MIT
 
 This means WP-Starter is completely free to use and modify as you see fit. I hope you use it to learn something new, make something cool, have fun, and share what you've learned with others.
