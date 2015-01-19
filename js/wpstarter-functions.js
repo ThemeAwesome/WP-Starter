@@ -4,7 +4,7 @@
  *
  * You will also notice this file containes exactly the same information as the function.js file in WP-Forge.
  *
- * @since WP-Starter 2.1
+ * @since WP-Starter 2.2
  */
 
 (function($) { // Add java script to footer so all Foundation scripts will work

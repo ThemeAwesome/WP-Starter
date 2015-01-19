@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 2.1
+ * @since WP-Starter 2.2
  */
 
 /**
@@ -49,26 +49,13 @@ function wpstarter_dequeue_script() {
 add_action( 'wp_print_scripts', 'wpstarter_dequeue_script', 100 );
 
 /**
- * Enqueue our styles
- *
- * Thanks to James Maiden of ReallyGreenWP.com for information on doing away with @import and
- * using a new process to include the parent theme style sheet.
- *
- * @see http://reallygreenwp.com/
- */
-function wpstarter_styles() {
-
-	wp_enqueue_style( 'parent-theme', get_template_directory_uri() . '/style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'wpstarter_styles', 1);
-
-/**
  *	Enqueue our styles and scripts
  */
-function wpstarter_scripts() {
+function wpstarter_style_scripts() {
 
+	wp_enqueue_style( 'parent-theme', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
 }
-add_action( 'wp_enqueue_scripts', 'wpstarter_scripts', 1);
+add_action( 'wp_enqueue_scripts', 'wpstarter_style_scripts', 100);
 
 ?>

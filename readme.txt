@@ -1,4 +1,4 @@
-﻿A WordPress Child Theme - v2.1
+﻿A WordPress Child Theme - v2.2
 =========================
 WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
