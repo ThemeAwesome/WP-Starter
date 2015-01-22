@@ -1,4 +1,4 @@
-Welcome to WP-Starter v2.3
+Welcome to WP-Starter v3.0
 ====================
 WP-Starter is a [WordPress child theme] (http://themeawesome.com/wordpress-child-theme) developed for use with [WP-Forge] (http://themeawesome.com/responsive-wordpress-theme/). If you need more information about WordPress Child Themes or how to use them correctly, please view the [WordPress Codex section on child themes] (http://codex.wordpress.org/Child_Themes)
 
