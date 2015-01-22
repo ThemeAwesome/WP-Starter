@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage WP_Starter
- * @since WP-Starter 2.2
+ * @since WP-Starter 3.0
  */
 
 /**
@@ -34,28 +34,13 @@ function wpstarter_theme_setup() {
 add_action( 'after_setup_theme', 'wpstarter_theme_setup' );
 
 /**
- * Dequeue the fucntions.js file of WP-Forge so we can use the one in WP-Starter. 
- * This way only one functions file is loaded instead of two.
- *
- * Hooked to the wp_print_scripts action, with a late priority (100),
- * so that it is after the script was enqueued.
- *
- * @see http://codex.wordpress.org/Function_Reference/wp_dequeue_script
- */
-function wpstarter_dequeue_script() {
-
-   wp_dequeue_script( 'functions-js' );
-}
-add_action( 'wp_print_scripts', 'wpstarter_dequeue_script', 100 );
-
-/**
- *	Enqueue our styles and scripts
+ * Enqueue or style sheets and scripts
  */
 function wpstarter_style_scripts() {
-
-	wp_enqueue_style( 'parent-theme', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
+    wp_dequeue_style('wpforge');
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ) );
+    wp_enqueue_script( 'wpstarter-js', get_stylesheet_directory_uri() . '/js/wpstarter-functions.js', array(), '', true );
 }
-add_action( 'wp_enqueue_scripts', 'wpstarter_style_scripts', 1);
-
+add_action( 'wp_enqueue_scripts', 'wpstarter_style_scripts',);
 ?>
