@@ -13,7 +13,7 @@ If you downloaded the parent theme WP-Forge from Github, you will need to open t
 
 ###License###
 WP-Starter is licensed as follows:
-* WordPress is GPLv2 - http://www.gnu.org/licenses/gpl-2.1.html
+* WordPress is GPLv2 -  http://www.gnu.org/licenses/gpl-2.0.html
 * Foundation by ZURB is MIT - http://opensource.org/licenses/MIT
 
 This means WP-Starter is completely free to use and modify as you see fit. I hope you use it to learn something new, make something cool, have fun, and share what you've learned with others.
