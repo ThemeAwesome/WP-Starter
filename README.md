@@ -21,6 +21,6 @@ WordPress is GPLv2 - http://www.gnu.org/licenses/gpl-2.1.html
 
 This means WP-Starter is completely free to use and modify as you see fit. I hope you use it to learn something new, make something cool, have fun, and share what you've learned with others.
 
-ThemeAWESOME.com
+ThemeAWESOME
 =============
 [ThemeAWESOME.com](https://themeawesome.com), a site focused on building WordPress themes with [Foundation for Sites](http://foundation.zurb.com/).
