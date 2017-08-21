@@ -1,31 +1,18 @@
-﻿A WordPress Child Theme - v3.0
-=========================
+=== WP-Starter ===
+Tags: light, black, white, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, sticky-post, translation-ready
+Requires at least: 4.8.1
+Tested up to: 4.9-alpha-41286
+Stable tag: 6.4.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+== Description ==
+
 WP-Starter is a WordPress child theme for use with WP-Forge. If you need more information about WordPress Child Themes or how to use them correctly, please view the WordPress Codex section on child themes: http://codex.wordpress.org/Child_Themes
 
-WP-Starter Demo
-=========================
-You can see a demo of WP-Starter here: http://wpstarter.themeawesome.com/ - It's nothing fancy, but make sure to look at the page source and you will see that the demo is in fact using WP-Starter.
+== Installation ==
 
-WP-Starter Support
-=========================
-If you need help with implementation or if you run into issues, you can post your questions/issues by visiting https://github.com/tsquez/wp-starter/issues
-
-Installation
-=========================
-If you downloaded the parent theme WP-Forge from Github, you will need to open the WP-Starter style.css file and change the @import url reference to WP-Forge-master instead of wp-forge. If you downloaded the parent theme WP-Forge from ThemeAwesome.com, then you don't have to change anything.
-
-License
-=========================
-WP-Starter is licensed as follows:
-* WordPress is GPLv2 - http://www.gnu.org/licenses/gpl-2.1.html
-* Foundation by ZURB is MIT - http://opensource.org/licenses/MIT
-
-This means WP-Starter is completely free to use and modify as you see fit. I hope you use it to learn something new, make something cool, have fun, and share what you've learned with others.
-
-ThemeAwesome.com
-=========================
-WP-Starter is a WordPress Child Theme developed by ThemeAwesome.com, a site focused on Responsive WordPress Themes.
-
-FoundationThemes.co
-=============
-FoundationThemes.co, http://foundationthemes.co/ is a website focused on developing Responsive WordPress themes built with WordPress and Zurb’s Foundation - Make sure you enter your email address to be notified when launches.
+1. In your admin panel, go to Appearance -> Themes and click the Add New button.
+2. Either use the Search or Filter options to locate a Theme you would like to use or click upload and choose file, then select the theme's ZIP file. Click Install Now.
+3. Click Activate to use your new theme right away.
+4. Click Appearance -> Customize to start modifying your theme.

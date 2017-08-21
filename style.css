@@ -1,13 +1,23 @@
 /*
 Theme Name: WP-Starter
 Theme URI: http://themeawesome.com/wordpress-child-theme
-Description: A child theme for WP-Forge
-Author: Thomas E. Vasquez
+Description: A child theme of WP-Forge
+Author: ThemeAwesome.com
 Author URI: http://themeawesome.com/
 Template: wp-forge
-Version: 3.0
+Version: 6.4.3
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.1.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, gray, white, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: wpstarter
+Text Domain: wp-starter
+
+Start adding your theme specific styles below.
 */
+
+
+/* Child Theme Media Queries - Use the following media queries to adjust the appearance of your theme on mobile devices */
+@media screen and (max-width: 39.9375em) {}/* Small only */
+@media screen and (min-width: 40em) {}/* Medium and up */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}/* Medium only */
+@media screen and (min-width: 64em) {}/* large and up */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}/* large only */   
